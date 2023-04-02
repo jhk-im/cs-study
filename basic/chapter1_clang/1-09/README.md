@@ -7,7 +7,7 @@
 
 ---
 
-### 아스키코드
+## 아스키코드
 
 1) C언어의 문자는 아스키 코드를 따른다 (Ascii Code)
 2) 0~127중의 1바이트로 구성되며 주요 문자를 출력하도록 해준다.
@@ -24,9 +24,9 @@ int *b = &a; -> 주소 0xCA29839F
 // *b가 선언된 뒤로는 5라는 값 자체를 의미하게 된다. 
 ```
 
-`주소연산자(&)` -> 변수앞에 붙어서 벼수의 메모리 시작 주소 값을 구한다. 
-`포인터(*)` -> 포인터 변수를 선언할 때 사용한다. 
-`간접 참조 연산자(*)` -> 선언된 포인터 변수가 가리키는 변수를 구한다. 
+`주소연산자(&)` -> 변수앞에 붙어서 벼수의 메모리 시작 주소 값을 구한다.
+`포인터(*)` -> 포인터 변수를 선언할 때 사용한다.
+`간접 참조 연산자(*)` -> 선언된 포인터 변수가 가리키는 변수를 구한다.
 
 example 1
 
@@ -34,9 +34,9 @@ example 1
 #include <stdio.h>
 
 int main(void) {
-	char a = 65;
-	printf("%c\n", a);
-	system("pause");
+ char a = 65;
+ printf("%c\n", a);
+ system("pause");
 }
 ```
 
@@ -47,8 +47,8 @@ A
 example 2: 문자 입출력함수
 
 ```c
-	char b = getchar();
-	printf("%c\n", b);
+ char b = getchar();
+ printf("%c\n", b);
 ```
 
 ```cmd
@@ -71,12 +71,12 @@ int *a = 0x33484735;
 example
 
 ```c
-	int c;
-	char d;
-	scanf("%d", &c);
-	printf("%d\n", c);
-	scanf("%c", &d);
-	printf("%c\n", d);
+ int c;
+ char d;
+ scanf("%d", &c);
+ printf("%d\n", c);
+ scanf("%c", &d);
+ printf("%c\n", d);
 ```
 
 ```txt
@@ -87,15 +87,15 @@ int c만 출력되고 바로종료됨
 * 남아있는 입력 버퍼를 지우는 방법
 
 ```c
-	int c;
-	char d;
-	scanf("%d", &c);
-	printf("%d\n", c);
-	int temp;
-	// 한자 씩 받아서 파일의 끝이거나 개행 문자를 만나면 입력을 멈추어 입력버퍼를 비운다. 
-	while ((temp = getchar()) != EOF && temp!= '\n') {}
-	scanf("%c", &d);
-	printf("%c\n", d);
+ int c;
+ char d;
+ scanf("%d", &c);
+ printf("%d\n", c);
+ int temp;
+ // 한자 씩 받아서 파일의 끝이거나 개행 문자를 만나면 입력을 멈추어 입력버퍼를 비운다. 
+ while ((temp = getchar()) != EOF && temp!= '\n') {}
+ scanf("%c", &d);
+ printf("%c\n", d);
 ```
 
 ```cmd

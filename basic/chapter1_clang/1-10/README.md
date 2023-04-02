@@ -1,4 +1,4 @@
-## 문자열
+# 문자열
 
 ```txt
 1) C언어에서 문자열을 다루는 방법에 대하여 학습
@@ -7,7 +7,7 @@
 
 ---
 
-### 문자열의 개념
+## 문자열의 개념
 
 1) 문자들의 배열을 의미한다.
 2) 컴퓨터 메모리 구조상에서 마지막에 null 값을 포함한다.
@@ -30,9 +30,9 @@ example 1
 #include <stdio.h>
 
 int main(void) {
-	char a = 65;
-	printf("%c\n", a);
-	system("pause");
+ char a = 65;
+ printf("%c\n", a);
+ system("pause");
 }
 ```
 
@@ -47,10 +47,10 @@ example 2
 * 포인터로 문자열을 선언했다고 하더라도 기존의 배열처럼 처리할 수 있다.
 
 ```c
-	char *a = "Hello World";
-	printf("%c\n", a[0]);
-	printf("%c\n", a[1]);
-	printf("%c\n", a[2]);
+ char *a = "Hello World";
+ printf("%c\n", a[0]);
+ printf("%c\n", a[1]);
+ printf("%c\n", a[2]);
 ```
 
 ```cmd
@@ -68,9 +68,9 @@ l
 example 1
 
 ```c
-	char b[100];
-	gets(b);
-	printf("%s\n", b);
+ char b[100];
+ gets(b);
+ printf("%s\n", b);
 ```
 
 ```cmd
@@ -84,9 +84,9 @@ my name is kim(출력)
 example 2
 
 ```c
-	char c[100];
-	gets_s(c, sizeof(c));
-	printf("%s\n", c);
+ char c[100];
+ gets_s(c, sizeof(c));
+ printf("%s\n", c);
 ```
 
 * sizeof() 는 특정 배열의 전체 크기를 알려준다.
@@ -111,20 +111,20 @@ example 2
 #include <string.h>
 
 int main(void) {
-	char d[20] = "JeongHoon Kim";
-	char e[20] = "C Language";
-	char f[20] = "";
-	char g[20] = "Language";
-	printf("문자열의 길이: %d\n", strlen(d));
-	printf("문자열의 길이: %d\n", strlen(e));
-	printf("두 배열의 사전 순 비교: %d\n", strcmp(d, e));
-	strcpy(f, d);
-	printf("복사된 문자열: %s\n", f);
-	strcat(f, e);
-	printf("합쳐진 문자열: %s\n", f);
-	printf("찾은 문자열: %s\n", strstr(e, g));
-	system("pause");
-	return 0;
+ char d[20] = "JeongHoon Kim";
+ char e[20] = "C Language";
+ char f[20] = "";
+ char g[20] = "Language";
+ printf("문자열의 길이: %d\n", strlen(d));
+ printf("문자열의 길이: %d\n", strlen(e));
+ printf("두 배열의 사전 순 비교: %d\n", strcmp(d, e));
+ strcpy(f, d);
+ printf("복사된 문자열: %s\n", f);
+ strcat(f, e);
+ printf("합쳐진 문자열: %s\n", f);
+ printf("찾은 문자열: %s\n", strstr(e, g));
+ system("pause");
+ return 0;
 }
 ```
 

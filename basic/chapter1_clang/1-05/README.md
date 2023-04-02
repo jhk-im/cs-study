@@ -7,33 +7,35 @@
 
 ---
 
-### For
+## For
 
 * For문 내부의 조건에 부합하면 계속해서 특정한 구문을 실행
 * 반복문을 탈출하고자 하는 위치에 break구문 삽입
 
 ```c
 for (초기화; 조건; 반복 끝 명령어) {
-	// 반복 실행
+ // 반복 실행
 }
 ```
 
 example1
+
 ```c
 for (int i = 0; i <= 100; i++) {
-		printf("%d\n", i);
-	}
+  printf("%d\n", i);
+ }
 ```
 
 example2
+
 ```c
-	int n, sum = 0;
-	printf("n을 입력하세요. ");
-	scanf("%d", &n);
-	for (int j = 1; j <= n; j++) {
-		sum = sum + j;
-	}
-	printf("%d\n", sum);
+ int n, sum = 0;
+ printf("n을 입력하세요. ");
+ scanf("%d", &n);
+ for (int j = 1; j <= n; j++) {
+  sum = sum + j;
+ }
+ printf("%d\n", sum);
 ```
 
 ---
@@ -45,19 +47,23 @@ example2
 
 ```c
 for (초기화; 조건; 반복 끝 명령어) {
-	// 조건이 참인경우 무한루프 발생 
+ // 조건이 참인경우 무한루프 발생 
 }
 ```
+
 example 1
-```
+
+```c
  for(;;) {
-	 printf("Infinite Loop!\n")
+  printf("Infinite Loop!\n")
  }
 ```
+
 example2
-```
+
+```c
 for(int l = 0; l <= 100; l--) {
-	printf("Infinite Loop!\n")
+ printf("Infinite Loop!\n")
 }
 ```
 
@@ -67,13 +73,13 @@ for(int l = 0; l <= 100; l--) {
 
 ```c
 int minus = 0;
-	for (; 1;) {
-		int x;
-		scanf("%d", &x);
-		if (x == -1) break;
-		sum += x;
-	}
-	printf("%d\n", minus);
+ for (; 1;) {
+  int x;
+  scanf("%d", &x);
+  if (x == -1) break;
+  sum += x;
+ }
+ printf("%d\n", minus);
 ```
 
 ---
@@ -85,31 +91,31 @@ int minus = 0;
 
 ```c
 while (조건) {
-	// 반복 실행
+ // 반복 실행
 }
 ```
 
 example 1 : 특정문자 N번 출력하기
 
 ```c
-	int b;
-	char c;
-	scanf("%d %c", &b, &c);
-	while (b--) {
-		printf("%c", c);
-	}
+ int b;
+ char c;
+ scanf("%d %c", &b, &c);
+ while (b--) {
+  printf("%c", c);
+ }
 ```
 
 example 2: 특정 숫자 구구단 출력
 
 ```c
-	int g; 
-	scanf("%d", &g);
-	int x = 1;
-	while (x <= 9) {
-		printf("%d * %d = %d\n", g, x, g * x);
-		x++;
-	}
+ int g; 
+ scanf("%d", &g);
+ int x = 1;
+ while (x <= 9) {
+  printf("%d * %d = %d\n", g, x, g * x);
+  x++;
+ }
 ```
 
 ---
@@ -122,27 +128,27 @@ example 2: 특정 숫자 구구단 출력
 example1: 구구단 출력 (while)
 
 ```c
-	int ii = 1;
-	while (ii <= 9) {
-		int j = 1;
-		while (j <= 9) {
-			printf("%d * %d = %d\n", ii, j, ii * j);
-			j++;
-		}
-		printf("\n");
-		ii++;
-	}
+ int ii = 1;
+ while (ii <= 9) {
+  int j = 1;
+  while (j <= 9) {
+   printf("%d * %d = %d\n", ii, j, ii * j);
+   j++;
+  }
+  printf("\n");
+  ii++;
+ }
 ```
 
 example2: 구구단 출력 (for)
 
 ```c
-	for (int i = 1; i <= 9; i++) {
-		for (int j = 1; j <= 9; j++) {
-			printf("%d * %d = %d\n", i, j, i * j);
-		}
-		printf("\n");
-	}
+ for (int i = 1; i <= 9; i++) {
+  for (int j = 1; j <= 9; j++) {
+   printf("%d * %d = %d\n", i, j, i * j);
+  }
+  printf("\n");
+ }
 ```
 
 ### For문과 WHILE문

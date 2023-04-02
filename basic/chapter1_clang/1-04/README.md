@@ -7,7 +7,7 @@
 
 ---
 
-### IF
+## IF
 
 * 내부에 조건을 검사해 프로그램의 진행 경로 결정
 * 조건의 개수가 많지 않을 때 사용하는 것이 유리
@@ -44,15 +44,15 @@ else {
 example2
 
 ```c
-	int size;
-	printf("메인 메모리 크기를 입력하세요. (GB)");
-	scanf("%d", &size);
-	if (size >= 16) {
-		printf("메인 메모리 크기가 충분합니다.\n");
-	}
-	else {
-		printf("메인 메모리를 증설하세요.\n");
-	}
+ int size;
+ printf("메인 메모리 크기를 입력하세요. (GB)");
+ scanf("%d", &size);
+ if (size >= 16) {
+  printf("메인 메모리 크기가 충분합니다.\n");
+ }
+ else {
+  printf("메인 메모리를 증설하세요.\n");
+ }
 ```
 
 ---
@@ -67,52 +67,54 @@ example2
 ```c
 switch (확인 대상) {
   case value1:
-	  //value1에 부합
-	  break;
+   //value1에 부합
+   break;
   case value2:
-	  //value2에 부합
-	  break;w
+   //value2에 부합
+   break;w
   Default:
-	  //모두 아닌경우  
+   //모두 아닌경우  
 ```
 
 example 1
+
 ```c
-	printf("학점을 입력하세요.");
-	char count;
-	scanf("%c", &count);
-	switch (count) {
-	case 'A':
-		printf("A 학점입니다.\n");
-		break;
-	case 'B':
-		printf("B 학점입니다.\n");
-		break;
-	case 'C':
-		printf("C 학점입니다.\n");
-		break;
-	default:
-		printf("학점을 바르게 입력하세요.\n");
-	}
+ printf("학점을 입력하세요.");
+ char count;
+ scanf("%c", &count);
+ switch (count) {
+ case 'A':
+  printf("A 학점입니다.\n");
+  break;
+ case 'B':
+  printf("B 학점입니다.\n");
+  break;
+ case 'C':
+  printf("C 학점입니다.\n");
+  break;
+ default:
+  printf("학점을 바르게 입력하세요.\n");
+ }
 ```
 
 example2
+
 ```c
-	printf("월을 입력하세요.");
-	int month;
-	scanf("%d", &month);
-	switch (month) {
-	case 1: case 2: case 12:
-		printf("겨울입니다.\n");
-		break;
-	case 3: case 4: case 5:
-		printf("봄입니다.\n");
-		break;
-	case 6: case 7: case 8:
-		printf("여름입니다.\n");
-		break;
-	case 9: case 10: case 11:
-		printf("가을입니다.\n");
-		break;
-	}
+ printf("월을 입력하세요.");
+ int month;
+ scanf("%d", &month);
+ switch (month) {
+ case 1: case 2: case 12:
+  printf("겨울입니다.\n");
+  break;
+ case 3: case 4: case 5:
+  printf("봄입니다.\n");
+  break;
+ case 6: case 7: case 8:
+  printf("여름입니다.\n");
+  break;
+ case 9: case 10: case 11:
+  printf("가을입니다.\n");
+  break;
+ }
 ```

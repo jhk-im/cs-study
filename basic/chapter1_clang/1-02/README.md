@@ -9,7 +9,7 @@
 
 ## scanf() 입력
 
-* 특정한 변수에 값을 넣기 위해 scanf()를 사용한다. 
+* 특정한 변수에 값을 넣기 위해 scanf()를 사용한다.
 
 ```c
 #include <stdio.h>
@@ -27,9 +27,8 @@ int main(void) {
 * scanf()함수는 그냥 사용할 수 없도록 제한되어있다.
 * 중요한 모듈에서는 scanf() 함수를 사용하지 않는다.
 
-##### #define _CRT_SECURE_NO_WARNINGS 를 추가
-
 ```c
+//#define _CRT_SECURE_NO_WARNINGS 를 추가
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 ...
@@ -39,7 +38,7 @@ int main(void) {
 * 실제로 컴퓨터는 특정 메모리 주소에 접근하여 데이터를 수정한다.
 * 메모리 주소에 얼마만큼 크기로 데이터를 사용할 지 결정해야한다.
 
-#### 형식 지정자
+### 형식 지정자
 
 * `int(4byte)` -> %d
 * `long long(8bytes)` -> %lld
@@ -56,7 +55,7 @@ int main(void) {
 
 ### 다양하게 입력받아 출력하기
 
-##### 두 숫자를 입력받아 순서 바꾸어 출력 
+#### 두 숫자를 입력받아 순서 바꾸어 출력
 
 ```c
     ...
