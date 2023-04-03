@@ -1,4 +1,6 @@
-## 배열
+# 배열
+
+## 배열의 정의
 
 ```txt
 1) 동일한 자료형을 여러 개 담는 기술
@@ -16,28 +18,30 @@
 ```
 
 example1
+
 ```c
 #include <stdio.h>
 
 int main(void) {
-	int a[10] = { 6,5,4,3,9,8,0,1,2,7 };
-	for (int i = 0; i < 10; i++) {
-		printf("%d", a[i]);
-	}
-	system("pause");
+ int a[10] = { 6,5,4,3,9,8,0,1,2,7 };
+ for (int i = 0; i < 10; i++) {
+  printf("%d", a[i]);
+ }
+ system("pause");
 }
 ```
 
 example2 : 최대값 찾기
+
 ```c
-	int maxValue = INT_MIN;
-	for (int i = 0; i < 10; i++) {
-		if (maxValue < a[i]) maxValue = a[i];
-	}
-	printf("%d\n", maxValue);
+ int maxValue = INT_MIN;
+ for (int i = 0; i < 10; i++) {
+  if (maxValue < a[i]) maxValue = a[i];
+ }
+ printf("%d\n", maxValue);
 ```
 
-#### INT_MIN
+### INT_MIN
 
 * 최대값을 구하기 위해 자주 사용되는 기능
 * <limits.h>헤더파일에 정의되어 있으며 int형 범위의 최소값을 반환
@@ -59,28 +63,28 @@ char a[20] = "Hello world"
 example1  : %s -> 문자열 형식 지정자
 
 ```c
-	char c[20];
-	scanf("%s", &c);
-	printf("%s\n", c);
+ char c[20];
+ scanf("%s", &c);
+ printf("%s\n", c);
 ```
 
 example2 : 특정 인덱스의 문자에 바로 접근할 수 있다.
 
 ```c
-	char d[20] = "Hello World";
-	d[5] = ',';
-	printf("%s\n", d);
+ char d[20] = "Hello World";
+ d[5] = ',';
+ printf("%s\n", d);
 ```
 
 example3: 특정 문자 개수 출력
 
 ```c
-	char d[20] = "Hello World";
-	int count = 0;
-	for (int i = 0; i <= 10; i++) {
-		if (d[i] == 'l') count++;
-	}
-	printf("%d\n", count);
+ char d[20] = "Hello World";
+ int count = 0;
+ for (int i = 0; i <= 10; i++) {
+  if (d[i] == 'l') count++;
+ }
+ printf("%d\n", count);
 ```
 
 ---
